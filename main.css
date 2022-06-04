@@ -1,0 +1,248 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --main-color:#000;
+    --seconday-color:#7c99d6;
+    --white-color:#fff;
+    --grey-color:#c3bfbf;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    padding: 100px;
+}
+ul {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Navbar Start*/
+.navbar {
+    position: sticky;
+    top:0;
+    z-index: 1;
+    padding: 10px 0px;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar__logo img{
+    padding: 0 15px;
+}
+.navbar__links {
+    align-items: center;
+}
+.navbar__links a{
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+.navbar__links a:hover{
+    color: var(--seconday-color);
+}
+
+.navbar__links li {
+    padding: 0px 15px;
+}
+/* Navbar End */
+
+
+
+/* Portfolio Start */
+.portfolio {
+    background-image: linear-gradient(to right,#8490ff, #62bdfc);
+}
+
+.portfolio .container{
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.portfolio__breadcrumbs{
+    color: var(--white-color);
+}
+.portfolio__breadcrumbs li a{
+    color: var(--white-color);
+    font-size: 0.75rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.portfolio__breadcrumbs li:not(:last-of-type)::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600; 
+    content: "\f061";
+    padding: 0 10px;
+}
+/* Portfolio End */
+
+/* Projects Start */
+
+    .projects .container{
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+    }
+    .projects header{
+        margin-bottom: 50px;
+    }
+    .projects header h2 {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    .projects__taps {
+        align-content: center;
+        justify-content: center;
+        padding: 30px 0px;
+    }
+    .projects__taps li a {
+        padding: 15px;
+        font-size: 0.875rem;
+    }
+    .projects__taps li a:hover {
+        color: var(--seconday-color);
+    }
+
+    .projects__wrapper {
+        flex-wrap: wrap;
+        padding: 30px 0;
+        justify-content: space-between;
+        row-gap: 20px;
+    }
+    .projects__wrapper__card {
+        flex-basis: 33.333333%;
+    }
+    .projects__wrapper__card img {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .projects__wrapper__card h3 {
+        font-weight: 600;
+        padding-top: 15px;
+        font-size: 1rem;
+    }
+
+/* Projects End */
+
+
+/* Footer Start*/
+footer {
+    background-color: #04091e;
+}
+
+footer .container{
+    padding: 100px 20px;
+    align-items: baseline;
+}
+
+footer h4 {
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 15px 0;
+}
+footer p{
+    padding: 5px 0;
+}
+footer span {
+    color: #8490ff;
+}
+
+.footer__about{
+    flex-basis: 35%;
+}
+.fa-brands {
+    color: var(--white-color);
+}
+
+.footer__newsletter__email {
+    padding: 10px 0;
+}
+.footer__newsletter__email input{
+    width: 500px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+}
+.footer__newsletter__email{
+    display: flex;
+}
+.footer__newsletter__email button{
+    border-radius: 0;
+    padding: 15px;
+    border: 0;
+    background-color: #8490ff;
+}
+.fa-arrow-right {
+    color: var(--white-color);
+}
+.footer__follow p {
+    margin-bottom: 10px;
+}
+
+
+/* Footer End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Attributes As Classes */ 
+.d-flex {
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
